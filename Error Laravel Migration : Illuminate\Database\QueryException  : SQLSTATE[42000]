@@ -1,0 +1,12 @@
+//For rsolve this paroblem you just need 1 change in file AppServiceProvider.php
+
+//Add this in top of file :
+
+use Illuminate\Support\Facades\Schema;
+
+//and this
+
+ public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
